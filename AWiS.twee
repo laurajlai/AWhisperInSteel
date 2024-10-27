@@ -1,0 +1,1818 @@
+:: StoryTitle
+A Whisper in Steel
+
+
+:: StoryData
+{
+  "ifid": "C309A103-A472-425A-A07F-46CA18B1FC27",
+  "format": "SugarCube",
+  "format-version": "2.37.3",
+  "start": "AWiS",
+  "tag-colors": {
+    "room-1": "red",
+    "room-2": "orange",
+    "gen": "purple",
+    "room-3": "yellow",
+    "room-4": "green",
+    "denoument": "blue"
+  },
+  "zoom": 0.3
+}
+
+
+:: AWiS [gen] {"position":"100,50","size":"100,100"}
+<span class="intro">A Whisper in Steel</span>
+
+for the best experience, we recommend you start from the beginning
+
+[[opening]] 
+
+
+:: It's Alistair Lilly. [denoument] {"position":"1250,1650","size":"100,100"}
+[[inventory]]
+
+You recognize that name. Once a celebrated scientist from Summerfall, he disappeared around the same time the child disappeances begun. There were a lot of rumors around him - some believed he had eloped with his secret lover, others believed he went insane after returning from university, and still others believed he just moved away.
+
+You now know none of these are true. You're not sure how deeply Alistair Lilly was involved in this. Did //he// separate these children from their families? Did //he// write those red notebooks? 
+
+Did he turn these children into monsters?
+
+The thought sickens you as you reenter the main hallway.
+
+<<if $peaceful is true>>
+	You suspect you hear a stirring from the rooms you just explored. You wonder how the children are doing.
+<</if>>
+   
+"Who's there?" An old man asks.
+
+[[turn and confront the true monster]]
+
+
+:: a coloring book [room-1] {"position":"625,725","size":"100,100"}
+[[inventory]]
+
+Hesitantly, you present the...thing with one of the coloring books you found.
+
+Its eyes shift from red to green and its joints creak as it flips through the pages of old drawings. You didn't know that robots could feel nostalgia, but somehow this one is.
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with Ray Johnson.
+
+The robot-child still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 1, and thankfully there are no other strange entities about.
+
+<<set $room1complete to true>>
+<<set $peaceful to true>>
+
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: a toy car [room-1] {"position":"625,350","size":"100,100"}
+[[inventory]]
+
+Hesitantly, you present the...thing with one of the toy cars from your bag.
+
+Its eyes shift from red to green and its joints creak as it bends over to race it on the ground.
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with Ray Johnson.
+
+The robot-child still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 1, and thankfully there are no other strange entities about.
+
+<<set $room1complete to true>>
+<<set $peaceful to true>>
+
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: bring Alistair Lilly to justice [denoument] {"position":"1250,1900","size":"100,100"}
+[[inventory]]
+
+<<if $peaceful is true>>
+	Suddenly, you realize you aren't alone. The doors around you blow open. You initially wonder if it's the police, but no...it's the children.
+    
+    Ray, Amber, Hannah, and John brace for combat around you. John pushes you backwards - and you reluctantly stay backwards. This is their fight.
+    
+    You close your eyes. You know this is going to be brutal, and you'd rather not see it.
+    
+    Of Lilly's screams, you can only clearly make out three words: "LET ME GO!"
+    
+    You realize that's what those children must have begged of him all those years ago. He scuttles desperately towards his lab - a secret exit, perhaps - but the children catch up to him, cornering him in the dirty hallway.
+    
+    No matter how long you live, you know you'll never forget the gruesome sounds that happen next. Then, suddenly, almost as soon as the fight began, you feel a gentle poke on your shoulder.
+    
+    When you open your eyes, all that's left is Alistair Lilly's mangled body lying on the floor of the lab. 
+    
+    "Good work, guys -" you begin, but you realize the light is leaving your companions' eyes.
+    
+   	Lilly must have controlled their life force to some extent - and once he was dead, his creations would die, too.
+    
+    Tears prick your eyes as you watch the metal creatures finally rest.
+    
+    For a brief second, you think you see a vision of four children holding hands - two boys and two girls, happier than they have ever been in years.
+    
+    Or maybe that was just an illusion.
+<<else>>
+Lilly tries to run for his lab - you assume he must either have a secret exit or a weapon there, or maybe both. But, he's an old man, and you easily overpower him.
+
+While in your chokehold, Lilly takes something out of his pocket, gripping it tightly between his fingers. 
+
+He swallows.
+
+Before long, he lies limp on the ground, dead.
+<</if>>
+[[continue to the exit]]
+
+
+
+:: continue to the exit {"position":"1250,2025","size":"100,100"}
+[[inventory]]
+
+You enter Lilly's lab, looking for an exit. 
+
+The clean white desk is cluttered with debris. You don't give his possessions a second look - you've seen enough of that for a lifetime.
+
+You figure that Lilly must have some sort of an exit in his compound, even if it was just for himself.
+
+Ah, there it is - a red sign labelled "E".
+
+[[leave]]
+
+
+:: credits {"position":"1250,2275","size":"100,100"}
+This project was designed for the Technica hackathon!
+
+Designed by: @laurajlai
+Engine used: Twine
+Font used: PT Mono
+Assets: Sketchpad.io
+
+Thanks for playing!
+
+[[play again|opening]]
+
+
+
+:: explore room 1 [room-1] {"position":"275,325","size":"100,100"}
+[[inventory]]
+
+You stand before the door to Room 1 - or at least you presume it's Room 1 based on the directions on your map. 
+
+You turn the rusty doorknob, and miraculously, the door actually opens. Part of you expected this to be harder.
+
+On the inside, Room 1 is actually very well-kept - a stark contrast from the decayed exterior. There's a neat little writing desk with a small stack of notebooks, a neatly made bed, and a small closet.
+
+[[investigate the desk]] 
+[[investigate the bed]] 
+[[investigate the closet]] 
+<span class="confrontation">[[turn and confront ???]]</span>
+
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+:: explore room 2 [room-2] {"position":"900,200","size":"100,100"}
+[[inventory]]
+
+You stand before the door to Room 2 - or at least you presume it's Room 2 based on the directions on your map. 
+
+You inspect the door - it was once decorated with a princess sign, but now, the only remnant of that decor is the lonely word "Princess". You carefully turn the doorknob and push the door open, and you're greeted with another room.
+
+Room 2 is a bit worn down. The bed is intact, but the desk has been broken in half - somehow - and the closet door has been ripped off its hinges. 
+
+[[investigate the Room 2 bed]] 
+[[investigate the Room 2 closet]] 
+[[investigate the Room 2 desk]]
+<span class="confrontation">[[turn and confront ??? |turn and confront ????]]</span>
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+:: explore room 3 [room-3] {"position":"1825,225","size":"100,100"}
+[[inventory]]
+
+You stand before the door to Room 3 - or at least you presume it's Room 3 based on the directions on your map. 
+
+The door looks melted and extremely run down. You really don't feel like touching any part of it, so you run up to the door and kick it as hard as you can.
+
+Fortunately, the door falls over, and you are greeted with an incredibly run down room. There's mold everywhere. Maybe there's even a new species in this room.
+
+[[investigate the Room 3 bed]] 
+[[investigate the Room 3 closet]] 
+[[investigate the Room 3 desk]]
+<span class="confrontation">[[turn and confront ??? |turn and confront ?????]]</span>
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+
+
+:: explore room 4 [room-4] {"position":"2325,125","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true and $room2complete is true and $room3complete is true>>
+You're getting a really bad feeling. Part of you doesn't want to even open the door. Part of you wants to throw up somewhere. 
+
+But you know that there's secrets there, too, and you've gone too far to stop now.
+<</if>>
+
+You stand before the door to Room 4. The number is perfectly clear this time.  
+
+
+<<if $room1complete is true and $room2complete is true and $room3complete is true>>
+You turn the rusty doorknob as quickly as you can and enter the room.
+<<else>>
+You anxiously turn the old doorknob and push the door open.
+<</if>>
+
+
+Room 4 is fairly well-preserved. It looks surprisingly lived in, as if the resident has only just left. It's fairly clean - if you can call anything in this place clean - and nothing has been completely broken.  
+
+[[investigate the Room 4 bed]] 
+[[investigate the Room 4 closet]] 
+[[investigate the Room 4 desk]]
+<span class="confrontation">[[turn and confront ??? |turn and confront the thing]]</span>
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+
+
+:: fight [room-1] {"position":"825,425","size":"100,100"}
+[[inventory]]
+
+Despite the...thing's best efforts, you manage to overpower it. From then on, you are left with deafening silence.
+
+You inspect the rest of Room 1, and thankfully there are no other strange entities about.
+
+<<set $room1complete to true>>
+<<set $peaceful to false>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: fight the princess [room-2] {"position":"1300,400","size":"100,100"}
+[[inventory]]
+
+Despite the...thing's best efforts, you manage to overpower it. From then on, you are left with deafening silence.
+
+You inspect the rest of Room 2, and thankfully there are no other strange entities about.
+
+<<set $room2complete to true>>
+<<set $peaceful to false>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: fight with the bug [room-3] {"position":"1450,1100","size":"100,100"}
+[[inventory]]
+
+Despite the robot-bug's best efforts, you manage to overpower it by hurling debris at it until it falls out of the sky. Afterwards, you stomp on the thing until it stops moving. From then on, you are left with deafening silence.
+
+You inspect the rest of Room 3, and thankfully there are no other strange entities about.
+
+<<set $room3complete to true>>
+<<set $peaceful to false>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: fight with the piano [room-4] {"position":"2925,375","size":"100,100"}
+[[inventory]]
+
+This fight is difficult - the piano, which is about three times you size, is imposing. However, its large size also makes it far less nimble than you. Despite its best efforts, you manage to overpower it by tricking it into running into a wall.
+
+It was a pretty tough hit, too, the piano took a chunk out of the wall. From then on, you are left with deafening silence.
+
+You inspect the rest of Room 4, and thankfully there are no other strange entities about.
+
+<<set $room4complete to true>>
+<<set $peaceful to false>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: inventory [gen] {"position":"25,225","size":"100,100"}
+<<print $inventory>>
+
+To return to the previous page, click the left arrow key in the sidebar.
+
+
+:: investigate the Essential Piano book [room-4] {"position":"2550,1075","size":"100,100"}
+[[inventory]]
+
+You open the book titled "Essential Piano" by Keith Swell. 
+
+The book contains all the classics young pianists are expected to know - classics such as "Minuet in G Minor" and "Sonatina in F Major" as well as more modern pieces such as "Tingle Bells" and "Count in Me". 
+
+There's a note on the "Tingle Bells" sheet music: "Everyone likes this one!"
+
+The resident in this room had a very ecletic taste in music, it seems.
+
+The pages are annotated with the efforts of a young piano student - full of remarks to "go slower" or to use a certain finger or to emphasize a particular note.
+
+
+<<if not $inventory.includes("Essential Piano\n")>>
+	<<set $inventory.push("Essential Piano\n")>>		
+<</if>>
+
+[[investigate the Room 4 red notebook]]
+[[investigate the Fundamental Piano Theory book]]
+[[investigate the bed |investigate the Room 4 bed]] 
+[[investigate the closet |investigate the Room 4 closet]] 
+
+
+:: investigate the Fundamental Piano Theory book [room-4] {"position":"2975,1025","size":"100,100"}
+[[inventory]]
+
+You open the book titled "Fundamental Piano Theory" by Keith Swell. 
+
+The book explains all the details of playing piano you've forgotten over the years - everything from what //mezzoforte// and //allegro// mean to what a fermata is. Every page is filled and scored with red ink. 
+
+It seems like John never made a single mistake in his theory homework.
+
+There's a note on the final exam chapter, scrawled under a red ink 100. 
+
+"My goal for the future: One day, I'll finish level 10, and I'll be a true piano player!"
+
+You wonder if that ever happened.
+
+<<if not $inventory.includes("Fundamental Piano Theory: the fundamentals of playing piano, could help even an amateur\n")>>
+	<<set $inventory.push("Fundamental Piano Theory: the fundamentals of playing piano, could help even an amateur\n")>>		
+<</if>>
+
+[[investigate the Room 4 red notebook]]
+[[investigate the Essential Piano book]]
+[[investigate the bed |investigate the Room 4 bed]] 
+[[investigate the closet |investigate the Room 4 closet]] 
+
+
+:: investigate the Room 2 bed [room-2] {"position":"875,600","size":"100,100"}
+[[inventory]]
+
+Yes, the bed is mostly intact, but that doesn't make it any less terrifying. There's a stain on the sheets that you hope is not blood, but probably is.
+
+You move the blankets aside, and you are greeted with a decayed old doll of Princess Isabella from "Beauty and the Beats". Its blue ballgown has mostly disappeared, but you can tell it's her from the microphone stand still stuck to the doll's left hand.
+
+<<if not $inventory.includes("Princess Isabella doll: an old doll of a princess\n")>>
+	<<set $inventory.push("Princess Isabella doll: an old doll of a princess\n")>>		
+<</if>>
+
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+back to [[explore room 2]]
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+
+:: investigate the Room 2 closet [room-2] {"position":"1250,550","size":"100,100"}
+[[inventory]]
+
+The closet is small and rather empty. You keep the door open, just to make sure you don't get locked in.
+
+There is a dresser, an old princess dress hanging from the top shelf, and a worn pink backpack.  
+
+[[investigate the old princess dress]]
+[[investigate the dresser |investigate the Room 2 dresser]]
+[[investigate the pink backpack]]
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+back to [[explore room 2]]
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+
+
+:: investigate the Room 2 desk [room-2] {"position":"1000,500","size":"100,100"}
+[[inventory]]
+
+The desk has been completely destroyed. That's...reassuring. 
+
+Crawling under the desk, you see a few picture books. "Beauty and the Beats," "The Princess and the Bog," and  - a red notebook.
+
+[[look at "Beauty and the Beats"]]
+[[look at "The Princess and the Bog"]]
+[[look at the red notebook |investigate the Room 2 red notebook]] 
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+back to [[explore room 2]]
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+
+
+:: investigate the Room 2 dresser [room-2] {"position":"1600,475","size":"100,100"}
+[[inventory]]
+
+Try as you might, the dresser drawers refuse to open.
+
+[[investigate the old princess dress]]
+[[investigate the pink backpack]]
+[[investigate the closet |investigate the Room 2 closet]]
+
+
+:: investigate the Room 2 red notebook [room-2] {"position":"1100,625","size":"100,100"}
+[[inventory]]
+
+You open the worn red notebook, which appears to be a lab notebook of sorts.
+
+Each page is full of entries about one "Amber Hayes".
+
+NAME: AMBER HAYES
+AGE: 7 YEARS
+CONDITION: GOOD
+INTERESTS: princesses and princess movies. (damaged text) I bought her one of Diana's dresses from "The Princess and the Bog," and she's been wearing it everywhere ever since.
+EXAMINER’S NOTE: Obedient compared to the others.
+
+NAME: AMBER HAYES
+AGE: 7.5 YEARS
+CONDITION: AVERAGE
+INTERESTS: See above.
+EXAMINER’S NOTE: She's becoming more unstable. (damaged text) Tried to destroy the desk - I had to ask for a replacement from Lilly, that was harrowing. On some sort of a hunger strike
+
+As you continue reading, the text becomes more and more damaged, as if someone deliberately defaced this notebook.
+
+The final entry is located near the end of the notebook, and is almost completely damaged.
+
+NAME: AMBER HAYES
+AGE: 9 YEARS
+CONDITION: POOR
+INTERESTS: (damaged text)
+EXAMINER'S NOTE: (damaged text) This is horrible (damaged text) (damaged text) (damaged text) (damaged text) Watching news makes me sick (damaged text) She shouldn't have to go through that (damaged text)
+
+<<if not $inventory.includes("red notebook: lab records about Amber Hayes\n")>>
+	<<set $inventory.push("red notebook: lab records about Amber Hayes\n")>>		
+<</if>>
+[[look at "The Princess and the Bog"]]
+[[look at "Beauty and the Beats"]] 
+[[investigate the bed |investigate the Room 2 bed]] 
+[[investigate the closet |investigate the Room 2 closet]] 
+
+
+:: investigate the Room 3 bed [room-3] {"position":"1925,375","size":"100,100"}
+[[inventory]]
+
+The bed is filthy, but still intact. There is so much mold on the sheets - gross. You don't want to touch those, not at all.
+
+You pick up the blanket by its corner, making sure there is as little contact between your skin and the dirty bedding as possible, and flip it over. 
+
+This is positively disgusting. You can only hope that the bed only fell into disrepair later.
+
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+back to [[explore room 3]] 
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+
+:: investigate the Room 3 closet [room-3] {"position":"2275,550","size":"100,100"}
+[[inventory]]
+
+This closet is somewhat filled.
+
+There is a dresser, a stack of what appears to be sketchbooks, and an enclosure.  
+
+[[investigate the sketchbooks]]
+[[investigate the dresser |investigate the Room 3 dresser]]
+[[investigate the closet enclosure]]
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+back to [[explore room 3]] 
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+
+:: investigate the Room 3 desk [room-3] {"position":"1800,450","size":"100,100"}
+[[inventory]]
+
+This desk is surprisingly neat. There is a small pencil can with a couple old pencils in it, and a stack of what used to be binder paper. Evidently the owner of this room cared about cleanliness and organization.
+
+You take special note of a small enclosure, a large picture book labelled "Unique Insects of Summerfall," and a red notebook lying on the desk. 
+
+[[look at the enclosure]]
+[[look at "Unique Insects of Summerfall"]]
+[[look at the red notebook |investigate the Room 3 red notebook]] 
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+back to [[explore room 3]] 
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+
+
+:: investigate the Room 3 dresser [room-3] {"position":"1950,800","size":"100,100"}
+[[inventory]]
+
+You carefully open each drawer of the dresser. 
+
+The first drawer of the dresser contains undergarments - all moth-bitten and decaying.
+
+The second drawer of the dresser contains some shirts - some faded graphic T-shirts with various cartoon characters on them. There's one T-shirt with a princess on it that was shoved in the back - evidently the resident in this room dislikes princesses.
+
+You think you see some moths inside - you realize those are the only live insects in this room you've seen. 
+
+The third drawer of the dresser contains some pants and skirts - the skirts are shoved in the back too, as if the wearer thought that by hiding them, she wouldn't have to wear them. 
+<<if not $inventory.includes("record of Hannah's clothes: graphic T-shirts and pants\n")>>
+	<<set $inventory.push("record of Hannah's clothes: graphic T-shirts and pants\n")>>		
+<</if>>
+
+[[investigate the closet enclosure]] 
+[[investigate the sketchbooks]] 
+[[investigate the closet |investigate the Room 3 closet]] 
+
+
+
+
+
+
+:: investigate the Room 3 red notebook [room-3] {"position":"2050,1000","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true or $room2complete is true or $room4complete is true>>
+You're getting a very bad feeling from all these red notebooks.
+<</if>>
+
+You open the worn red notebook, which appears to be a lab notebook of sorts.
+
+Each page is full of entries about one "Hannah Keats".
+
+NAME: HANNAH KEATS
+AGE: 6 YEARS
+CONDITION: GOOD
+INTERESTS: bugs. I never thought I'd see a child, let alone a girl, love bugs so much. I caught her trying to sneak ladybugs in from outside. 
+EXAMINER’S NOTE: Generally quiet and well-behaved. Orphans are (damaged text)
+
+NAME: HANNAH KEATS
+AGE: 6.5 YEARS
+CONDITION: AVERAGE
+INTERESTS: See above.
+EXAMINER’S NOTE: I relented and let her have a butterfly on the condition she raise it from scratch. But the caterpillar died (damaged text) and she's not taking it well. The others are a bit annoyed, especially Amber, who thinks bugs are (damage text)
+
+As you continue reading, the text becomes more and more damaged, as if someone deliberately defaced this notebook.
+
+The final entry is located in the middle of the notebook.
+
+NAME: HANNAH KEATS
+AGE: 7 YEARS
+CONDITION: POOR
+INTERESTS: See above.
+EXAMINER'S NOTE: I feel for Hannah. She's an orphan, which made it easy to (damaged text) (damaged text) Experiencing so much loss (damaged text) Well at least it's ending soon (damaged text)
+
+<<if not $inventory.includes("red notebook: lab records about Hannah Keats\n")>>
+	<<set $inventory.push("red notebook: lab records about Hannah Keats\n")>>		
+<</if>>
+[[look at the enclosure]]
+[[look at "Unique Insects of Summerfall"]] 
+[[investigate the bed |investigate the Room 3 bed]] 
+[[investigate the closet |investigate the Room 3 closet]] 
+
+
+:: investigate the Room 4 bed [room-4] {"position":"2425,425","size":"100,100"}
+[[inventory]]
+
+The messy bed is covered with sheets decorated with little music notes. The pillows are embroidered with various musical symbols too - you recognize the treble and bass clef, but not much else.
+
+Evidently the resident in this room loved playing music to have every detail of their room decorated with this theme.
+
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+back to [[explore room 4]] 
+
+
+:: investigate the Room 4 closet [room-4] {"position":"2575,575","size":"100,100"}
+[[inventory]]
+
+This closet is somewhat filled.
+
+There is a dresser, what appears to be a keyboard covered by a large white sheet, and a folder with a large eighth note on the front.
+
+[[investigate the folder]]
+[[investigate the dresser |investigate the Room 4 dresser]]
+[[investigate the keyboard]]
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+
+<<if $room3complete is false>>
+	leave & [[explore room 3]]
+<</if>>
+back to [[explore room 4]] 
+
+
+
+:: investigate the Room 4 desk [room-4] {"position":"2725,350","size":"100,100"}
+[[inventory]]
+
+The desk is covered in drawings of various musical instruments - you notice a piano, what appears to be a harp, and a violin.
+
+A metronome sits idly in the corner atop a few neatly stacked notebooks.
+
+[[look at the metronome]]
+[[look at the notebooks]]
+<<if $room1complete is false>>
+	leave & [[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+back to [[explore room 4]] 
+
+
+:: investigate the Room 4 dresser [room-4] {"position":"2975,750","size":"100,100"}
+[[inventory]]
+
+You carefully attempt to open each drawer of the dresser. 
+
+The first drawer of the dresser contains several old white collared shirt - stained with age and dirt. Not even a single T-shirt.
+
+The second drawer of the dresser contains two pairs of shoes - sneakers and formal dress shoes. Somehow, the dress shoes look more worn than the sneakers.
+
+The third drawer of the dresser contains some dress pants - very unextraordinary. In a way, you're almost relieved at the normalcy of this room. 
+
+<<if not $inventory.includes("record of John's clothes: mostly formal shirts and pants\n")>>
+	<<set $inventory.push("record of John's clothes: mostly formal shirts and pants\n")>>		
+<</if>>
+
+[[investigate the folder]] 
+[[investigate the keyboard]] 
+[[investigate the closet |investigate the Room 4 closet]] 
+
+
+
+
+
+
+:: investigate the Room 4 red notebook [room-4] {"position":"2875,1200","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true or $room2complete is true or $room3complete is true>>
+You're getting a very bad feeling from all these red notebooks.
+<</if>>
+
+You open the worn red notebook, which appears to be a lab notebook of sorts.
+
+Each page is full of entries about one "John Fitzgerald".
+
+NAME: JOHN FITZGERALD
+AGE: 8 YEARS
+CONDITION: GOOD
+INTERESTS: music. Apparently he's been playing piano since he was 3. I feel kind of bad for him, but at least he genuinely is interested in piano. I got him some of my old piano books from way back when. 
+EXAMINER’S NOTE: Generally quiet and well-behaved. He has a difficult family (damaged text) Makes him (damaged text)
+
+NAME: JOHN FITZGERALD
+AGE: 8 YEARS
+CONDITION: AVERAGE
+INTERESTS: See above.
+EXAMINER’S NOTE: A major piano competition for kids is coming up and he's getting (damaged text) that he won't be able to participate. (damaged text) (damaged text)
+
+As you continue reading, the text becomes more and more damaged, as if someone deliberately defaced this notebook.
+
+The final entry is located only a few entries away from when the first entry began.
+
+NAME: JOHN FITZGERALD
+AGE: 8 YEARS
+CONDITION: POOR
+INTERESTS: See above.
+EXAMINER'S NOTE: Lilly told him he couldn't participate in the competition, and tried to take the keyboard away. John (damaged text). Even I have to admit it's horrifying what happened next. Tried to clean up the mess (damaged text). At least it's over.
+
+<<if not $inventory.includes("red notebook: lab records about John Fitzgerald\n")>>
+	<<set $inventory.push("red notebook: lab records about John Fitzgerald\n")>>		
+<</if>>
+[[look at the notebooks]]
+[[investigate the Essential Piano book]]
+[[investigate the Fundamental Piano Theory book]]
+[[investigate the bed |investigate the Room 4 bed]] 
+[[investigate the closet |investigate the Room 4 closet]] 
+
+
+:: investigate the bed [room-1] {"position":"50,525","size":"100,100"}
+[[inventory]]
+
+The bed is neatly made. The car-themed blankets have been neatly folded into a neat pile - whether by Ray or by someone else, you can't be entirely sure.
+
+You examine the bed further. Maybe there could be something there.
+
+[[investigate under the bed]]
+back to [[explore room 1]] 
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+<<if $inventory.includes("damaged toy car: It fell under the bed and is now more than a little damaged.\n")>>
+	<<set $finished_bed to true>>
+<</if>>
+
+
+
+:: investigate the books [room-1] {"position":"350,1025","size":"100,100"}
+[[inventory]]
+
+There are a few picture books - "The Cat and the Bat," "Red Eggs and Ham," and "The Very Hungry Worm". It's...interesting to note that people's tastes in children's books haven't changed over the years.
+
+But there are even more coloring books here, still filled with drawings from //Super Cars//. Seriously, did Ray spend his entire time here coloring? Did he even go to school?
+
+[[investigate the dresser]] 
+[[investigate the crate]] 
+[[investigate the closet]] 
+
+
+
+
+
+
+:: investigate the closet [room-1] {"position":"350,450","size":"100,100"}
+[[inventory]]
+
+The closet is small and rather empty. You keep the door open, just to make sure you don't get locked in.
+
+There is a dresser with three drawers, another stack of books, and a small crate with the word "TOYS" written on the top.
+
+[[investigate the dresser]]
+[[investigate the books]]
+[[investigate the crate]]
+back to [[explore room 1]] 
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+<<if $inventory.includes("record of Ray's toy cars: cars of all shapes and sizes. Ray evidently loved toy cars\n") or $inventory.includes("record of Ray's clothes: red T-shirts and one pair of gray sweatpants\n")>>
+	<<set $finished_closet to true>>		
+<</if>>
+
+
+
+:: investigate the closet enclosure [room-3] {"position":"1750,725","size":"100,100"}
+[[inventory]]
+
+You carefully inspect the dented box. It's covered in drawings of crude butterflies. There's a scratched out label - "To (damaged text) Lilly". 
+
+You open the box, and a horde of dead insects falls onto your lap. Evidently, whatever butterflies living in here have died. 
+
+There's a small folded up piece of paper in the box too. You unfold it and begin to read:
+
+Day 1: Welcome home, Phoebe and Jessica! Mr. Lilly gave you to me because he says I'm a good kid!!! I named Phoebe after my mommy (damaged text).
+
+Day 2: (damaged text)
+
+(damaged text)
+
+(damaged text)
+
+Day 14: Phoebe died! Mr. Lilly says it's because I didn't give her any light. But I don't get any light and I (damaged text) (damaged text)
+
+<<if not $inventory.includes("record of another insect enclosure\n")>>
+	<<set $inventory.push("record of another insect enclosure\n")>>		
+<</if>>
+
+[[investigate the sketchbooks]]
+[[investigate the dresser |investigate the Room 3 dresser]]
+[[investigate the closet |investigate the Room 3 closet]]
+
+
+:: investigate the crate [room-1] {"position":"525,450","size":"100,100"}
+[[inventory]]
+
+You open the crate, which is filled with toy cars of all shapes and sizes, and a small racetrack set.
+
+You don't have much experience with toy cars, but it's pretty obvious these cars are vintage. You could probably make some money by selling these at an antique store, but you really don't feel like explaining why you got your hands on these. 
+
+Regardless, it's probably useful to take note of their features, especially since the owner of these toy cars probably loved playing with them.
+<<if not $inventory.includes("record of Ray's toy cars: cars of all shapes and sizes. Ray evidently loved toy cars\n")>>
+	<<set $inventory.push("record of Ray's toy cars: cars of all shapes and sizes. Ray evidently loved toy cars\n")>>		
+<</if>>
+
+[[investigate the dresser]] 
+[[investigate the books]]
+[[investigate the closet]] 
+
+
+
+
+
+
+
+:: investigate the desk [room-1] {"position":"125,875","size":"100,100"}
+[[inventory]]
+
+The desk is very neat - unlike your own desk, which is cluttered with so many papers and books that you struggle to find a blank spot to write on.
+
+There is a stack of notebooks on the desk - one red notebook, one green notebook, and one coloring book.
+
+[[look at the red notebook]]
+[[look at the green notebook]]
+[[look at the coloring book]]
+back to [[explore room 1]] 
+<<if $room2complete is false>>
+	leave & [[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	leave & [[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	leave & [[explore room 4]] 
+<</if>>
+
+<<if $inventory.includes("red notebook: lab records about Ray Johnson\n") or $inventory.includes("green notebook: Ray Johnson's writing exercises\n") or $inventory.includes("coloring book: filled with Ray Johnson's favorite car-themed cartoon\n")>>
+	<<set $finished_desk to true>>
+<</if>>
+
+
+:: investigate the dresser [room-1] {"position":"500,625","size":"100,100"}
+[[inventory]]
+
+You shakily open each drawer of the dresser. Are there going to be more coloring books? More cars? You feel like you've recognized a pattern.
+
+The first drawer of the dresser contains undergarments. You think you see some moths in the drawer too. No need for further investigation, you've seen enough.
+
+The second drawer of the dresser contains some shirts - all solid red T-shirts. They're all rumpled and moth-bitten now. 
+
+The third drawer of the dresser contains a single pair of torn gray sweatpants.
+<<if not $inventory.includes("record of Ray's clothes: red T-shirts and one pair of gray sweatpants\n")>>
+	<<set $inventory.push("record of Ray's clothes: red T-shirts and one pair of gray sweatpants\n")>>		
+<</if>>
+
+[[investigate the books]] 
+[[investigate the crate]] 
+[[investigate the closet]] 
+
+
+
+
+
+
+:: investigate the folder [room-4] {"position":"2625,800","size":"100,100"}
+[[inventory]]
+
+The folder is filled with various musical achievements, chiefly certificates wrapped in plastic sheet protectors. Because of those sheet protectors, the fancy text on the certificates is mostly intact. 
+
+You learn that this kid won first place in multiple local piano competitions - while Summerfall isn't a big town, it's still impressive that this kid won so many competitions at such a young age.  
+
+There's a picture too, of a beaming little boy with what you assume are his parents and his piano teacher.
+
+On the back of the picture, there's a note: Never stop achieving, John!
+
+<<if not $inventory.includes("folder of achievements\n")>>
+	<<set $inventory.push("folder of achievements\n")>>		
+<</if>>
+
+[[investigate the keyboard]]
+[[investigate the Room 4 dresser]]
+[[investigate the closet |investigate the Room 4 closet]] 
+
+
+:: investigate the keyboard [room-4] {"position":"2450,775","size":"100,100"}
+[[inventory]]
+
+You lift the cover and carefully press down on Middle C, and to your surprise the keyboard actually produces a sound. 
+
+This thing has been plugged in all this time?! 
+
+Or maybe, it hasn't been plugged in for that long...and this room was abandoned more recently than the others.
+
+Based on its safe position in the closet and protection from the elements, you can tell that the owner of this piano cherished it very much.
+
+Obviously, you can't fit that in your bag, but you can take note of its existence. 
+
+<<if not $inventory.includes("record of electric keyboard: a cherished possession\n")>>
+	<<set $inventory.push("record of electric keyboard: a cherished possession\n")>>		
+<</if>>
+
+[[investigate the Room 4 dresser]]
+[[investigate the folder]]
+[[investigate the closet |investigate the Room 4 closet]] 
+
+
+:: investigate the old princess dress [room-2] {"position":"1100,800","size":"100,100"}
+[[inventory]]
+
+The dress is a child-sized version of the one worn by Princess Isabella in "Beauty and the Beats". It doesn't fit you, and even if it did you wouldn't want to wear this ancient thing.
+
+The child who lived in this room must have loved "Beauty and the Beats".
+
+<<if not $inventory.includes("old dress: a Princess Isabella costume\n")>>
+	<<set $inventory.push("old dress: a Princess Isabella costume\n")>>		
+<</if>>
+
+[[investigate the dresser |investigate the Room 2 dresser]]
+[[investigate the pink backpack]]
+[[investigate the closet |investigate the Room 2 closet]]
+
+
+:: investigate the pink backpack [room-2] {"position":"1425,500","size":"100,100"}
+[[inventory]]
+
+The backpack hangs from a hook in the closet. It's wide open - so you can easily see what it's inside. There are some scattered papers - mostly crude drawings of Princess Isabella and Princess Diana- and what was probably once a sticky note stuck at the very bottom:
+
+"This lunch is for you. Love you, Amber! - Mom"
+
+You wonder briefly about how Amber could have ended up in this place.
+
+<<if not $inventory.includes("loving note: Mom wanted Amber to have a good lunch\n")>>
+	<<set $inventory.push("loving note: Mom wanted Amber to have a good lunch\n")>>	
+<</if>>
+
+[[investigate the dresser |investigate the Room 2 dresser]]
+[[investigate the old princess dress]]
+[[investigate the closet |investigate the Room 2 closet]]
+
+
+:: investigate the sketchbooks [room-3] {"position":"1950,625","size":"100,100"}
+[[inventory]]
+
+You open the top sketchbook.
+
+Page after page is filled with drawings of various insects, especially butterflies. At first, the drawings are rather crude, but towards the middle of the book, the drawings become surprisingly detailed for a child's work. 
+
+Then towards the end of the book, the drawings become messy again. 
+
+There's a note on the back of the sketchbook: "I hate Mr. Lilly!!!"
+
+<<if not $inventory.includes("insect sketchbook\n")>>
+	<<set $inventory.push("insect sketchbook\n")>>		
+<</if>>
+
+[[investigate the closet enclosure]]
+[[investigate the dresser |investigate the Room 3 dresser]]
+[[investigate the closet |investigate the Room 3 closet]]
+
+
+:: investigate under the bed [room-1] {"position":"225,575","size":"100,100"}
+[[inventory]]
+
+Dust! So much dust! You cough and sneeze as it gets up your nose. Any more dust and you'll sneeze yourself to death.
+
+Your eyes are watering, but you still notice a small toy car that fell under the bed. Picking it up, you see that while it looks rather damaged, the wheels are still surprisingly functional. 
+<<if not $inventory.includes("damaged toy car: It fell under the bed and is now more than a little damaged.\n")>>
+	<<set $inventory.push("damaged toy car: It fell under the bed and is now more than a little damaged.\n")>>		
+<</if>>
+[[investigate the bed]]
+[[investigate the desk]] 
+[[investigate the closet]] 
+
+
+:: keep heading inside [gen] {"position":"700,25","size":"100,100"}
+[[inventory]]
+<<set $room1complete to false>>
+<<set $room2complete to false>>
+<<set $room3complete to false>>
+<<set $room4complete to false>>
+
+You carefully continue making your way inside, walking over still more piles of metal and...burned up papers? 
+
+All the while, metal creaks and screeches around you. The metal birds especially don't like your presence. 
+
+One particular piece of paper catches your eye. It appears to be a map of sorts, but unfortunately there aren't any instructions about leaving. There are, however, notes about various rooms in this strange complex.
+
+[[explore room 1]]
+[[explore room 2]]
+[[explore room 3]]
+[[explore room 4]]
+
+
+
+:: leave {"position":"1250,2150","size":"100,100"}
+[[inventory]]
+
+Finally, it's over.
+
+No more metal monsters, or crazy scientists, or red notebooks.
+
+You fall to the ground as soon as you see the twilight sky - the outside world has never been more beautiful. 
+
+You head home, ready to take a nice long nap after the craziness you experienced today. 
+
+[[credits]]
+
+
+:: look at "Beauty and the Beats" [room-2] {"position":"1525,350","size":"100,100"}
+[[inventory]]
+
+You remember this book, as you watched its animated movie adaption as a child. It's about a princess who falls for a once-renowned musician cursed by a sorceress to become a horrible monster who can never sing again. She breaks the curse with the power of love (as one does) and they live happily ever after.
+
+It makes sense that kids would watch this.
+
+There's a note on the back of the book.
+
+"I love Princess Isabella! I'm just like her. We grew up alone. I wish I was also a magic princess!!!"
+
+<<if not $inventory.includes("Beauty and the Beats: a book about a princess who falls for a cursed musician\n")>>
+	<<set $inventory.push("Beauty and the Beats: a book about a princess who falls for a cursed musician\n")>>		
+<</if>>
+
+[[investigate the Room 2 desk]] 
+[[look at "The Princess and the Bog"]]
+[[look at the red notebook |investigate the Room 2 red notebook]] 
+
+
+:: look at "The Princess and the Bog" [room-2] {"position":"1100,375","size":"100,100"}
+[[inventory]]
+
+You remember this book, as you watched its animated movie adaption as a child. It was about a princess who lived in a bog until the bog was captured by some rival kingdom or whatever. You don't remember the plot off the top of your head.
+
+It makes sense that kids would watch this.
+
+<<if not $inventory.includes("The Princess and the Bog: a book about a princess who lives in a bog\n")>>
+	<<set $inventory.push("The Princess and the Bog: a book about a princess who lives in a bog\n")>>		
+<</if>>
+
+[[investigate the Room 2 desk]] 
+[[look at "Beauty and the Beats"]]
+[[look at the red notebook |investigate the Room 2 red notebook]] 
+
+
+:: look at "Unique Insects of Summerfall" [room-3] {"position":"1725,575","size":"100,100"}
+[[inventory]]
+
+You crack open this copy of "Unique Insects of Summerfall". On the front page is a strong declaration:
+
+THIS BOOK IS THE PROPERTY OF HANNAH KEATS! BEWARE!
+
+Well, Hannah isn't here to complain about you borrowing her book, so you keep reading.
+
+The book contains detailed descriptions of insects around Summerfall - from mayflies, to the monarch butterfly, to common stink bugs - complete with what were once colorful images.
+
+There's a note on the butterflies chapter:
+
+"Butterflies are SO COOL! Maybe Mr. Lilly has one!"
+
+<<if not $inventory.includes("Unique Insects of Summerfall: a guide to the unique insect life of Summerfall\n")>>
+	<<set $inventory.push("Unique Insects of Summerfall: a guide to the unique insect life of Summerfall\n")>>		
+<</if>>
+
+[[investigate the Room 3 desk]] 
+[[look at the enclosure]]
+[[look at the red notebook |investigate the Room 3 red notebook]] 
+
+
+:: look at the coloring book [room-1] {"position":"375,725","size":"100,100"}
+[[inventory]]
+
+You open the coloring book, which contains a bunch of pictures from an old-timey cartoon, //Super Cars//.
+
+However, near the end, you see more and more drawings of characters who distinctly aren't from the cartoon - a chunky red-orange car, a pastel pink car, a small green car, and a long black car.
+
+You wonder what inspired these cars. 
+
+There is a sticky note attached to the inside cover:
+
+"This book was a real steal. Ray's super excited and doesn't make much of a fuss."
+
+<<if not $inventory.includes("coloring book: filled with Ray Johnson's favorite car-themed cartoon\n")>>
+	<<set $inventory.push("coloring book: filled with Ray Johnson's favorite car-themed cartoon\n")>>		
+<</if>>
+[[look at the red notebook]]
+[[look at the green notebook]] 
+[[investigate the bed]] 
+[[investigate the closet]] 
+
+
+:: look at the enclosure [room-3] {"position":"1775,975","size":"100,100"}
+[[inventory]]
+
+You initially think this is a random shoebox, but judging from the neat rows of small holes on the top - it's actually an insect enclosure. Or maybe an insect prison, because there are no windows in this box, and any insect inside would probably die from lack of light.
+
+You easily open the shoebox. It is to put it mildly an insect graveyard - you can see some desiccated ladybug and caterpillar corpses in there. You also see what seems like a cocoon - that poor caterpillar died before it could become a butterfly.
+
+<<if not $inventory.includes("record of an insect enclosure: this child must have liked bugs, even if they didn't take the best care of them.\n")>>
+	<<set $inventory.push("record of an insect enclosure: this child must have liked bugs, even if they didn't take the best care of them.\n")>>		
+<</if>>
+
+[[investigate the Room 3 desk]] 
+[[look at "Unique Insects of Summerfall"]]
+[[look at the red notebook |investigate the Room 3 red notebook]] 
+
+
+:: look at the green notebook [room-1] {"position":"200,1600","size":"100,100"}
+[[inventory]]
+
+You open the green notebook, which contains a bunch of writing exercises.
+
+The writer really ought to work on their penmanship, it's very messy.
+
+"Aa"
+
+"apple" "apple" "apple" "apple"
+
+"ask" 'ask" "ask" "ask"
+
+"angel" "angel" "angel" "angel"
+
+"Bb"
+
+"ball" "ball" "ball" "ball"
+
+"bowl" "bowl" "bowl" "bowl"
+
+"brand" "brand" "brand" "brand"
+
+<<if not $inventory.includes("green notebook: Ray Johnson's writing exercises\n")>>
+	<<set $inventory.push("green notebook: Ray Johnson's writing exercises\n")>>		
+<</if>>
+[[look at the red notebook]]
+[[look at the coloring book]] 
+[[investigate the bed]] 
+[[investigate the closet]] 
+
+
+:: look at the metronome [room-4] {"position":"2700,550","size":"100,100"}
+[[inventory]]
+
+You carefully examine the metronome. It allows you to play at any tempo between 40 and 208. On the bottom, there's a message scrawled in fading red paint:
+
+==PROPERTY OF ALISTAIR LILLY==Property of John F. 
+
+Owing to this thing likely being older than you are, you decide against opening its cover.
+
+<<if not $inventory.includes("metronome/n")>>
+	<<set $inventory.push("metronome/n")>>		
+<</if>>
+
+[[investigate the Room 4 desk]] 
+[[look at the notebooks]] 
+
+
+:: look at the notebooks [room-4] {"position":"2800,950","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true and $room2complete is true and $room3complete is true>>
+You immediately notice the red notebook - a few days ago you could never have imagined seeing that color on a notebook would send you into such panic. 
+<</if>>
+
+It turns out only one of the books on this desk is an actual notebook, the red one. The other two books - Essential Piano and Fundamental Piano Theory - are music books. 
+
+[[investigate the Room 4 red notebook]]
+[[investigate the Essential Piano book]]
+[[investigate the Fundamental Piano Theory book]]
+[[investigate the Room 4 desk]]
+
+
+:: look at the red notebook [room-1] {"position":"0,1800","size":"100,100"}
+[[inventory]]
+
+You open the worn red notebook, which appears to be a lab notebook of sorts.
+
+Each page is full of entries about one "Ray Johnson".
+
+NAME: RAY JOHNSON
+AGE: 5 YEARS
+CONDITION: GOOD
+INTERESTS: cars, trucks. Has visited the bumper cars section of the amusement park ten times at least.
+EXAMINER’S NOTE: Very difficult to get him to leave his room. Cries for his mother every night. If I have to buy another coloring book, I'm going to change jobs.
+
+NAME: RAY JOHNSON
+AGE: 5 YEARS
+CONDITION: AVERAGE
+INTERESTS: See above.
+EXAMINER’S NOTE: Has completely shut down. I don't think it's just because he lost one of his toy cars. Refuses to talk to anyone, even me. Bit Lilly when (damaged text)
+
+As you continue reading, the text becomes more and more damaged, as if someone deliberately defaced this notebook.
+
+The final entry is located in the middle of the notebook.
+
+NAME: RAY JOHNSON
+AGE: 5.5 YEARS
+CONDITION: POOR
+INTERESTS: He's dying soon, do I need to keep track of this?
+EXAMINER'S NOTE: I'm going to destroy (damaged text) Give him a (damaged text) (damaged text) (damaged text) Watching news makes me sick (damaged text)
+
+<<if not $inventory.includes("red notebook: lab records about Ray Johnson\n")>>
+	<<set $inventory.push("red notebook: lab records about Ray Johnson\n")>>		
+<</if>>
+[[look at the green notebook]]
+[[look at the coloring book]] 
+[[investigate the bed]] 
+[[investigate the closet]] 
+
+
+:: negotiate with the bug [room-3] {"position":"1625,1000","size":"100,100"}
+[[inventory]]
+
+You think about the room you just explored. There were so many bugs - alive ones, yes, but many dead ones, too. Dead bugs that Hannah once cared for. Despite the general perception of bugs as gross, she clearly cared about them and saw them as a family of sorts. 
+
+And...what if the robot bearing down on you has some connection to Hannah? It was in her room, after all. Maybe it's afraid you're going to kill the bugs or take them away from her. As for how they ended up fused in this abomination...you'd really rather not dwell on that now.
+
+You get a crazy idea. You reach into your bag and pull out...
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("Unique Insects of Summerfall: a guide to the unique insect life of Summerfall\n")>>
+	[[the copy of "Unique Insects of Summerfall"]]
+<</if>>
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("insect sketchbook\n")>>
+	[[the sketchbook]]
+<</if>>
+still going to [[fight |fight with the bug]]
+
+
+:: negotiate with the piano [room-4] {"position":"3050,375","size":"100,100"}
+[[inventory]]
+
+You think about the room you just explored. Once upon a time, a young pianist lived in this room. You struggle to suspend your disbelief that a child would willingly practice piano for hours, but there were so much music here, music that child loved. 
+
+And...what if the robot bearing down on you has some connection to John? It was in her room, after all. Maybe it's afraid you're going to take away or destroy his piano. As for how they ended up fused in this abomination...you'd really rather not dwell on that now.
+
+You get a crazy idea. Actually, two crazy ideas. 
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("record of electric keyboard: a cherished possession\n")>>
+	[[try playing the keyboard in the closet]]
+<</if>>
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("folder of achievements\n")>>
+	[[show the folder of achievements]]
+ <</if>>
+still going to [[fight |fight with the piano]]
+
+
+:: negotiate with the princess [room-2] {"position":"1125,1125","size":"100,100"}
+[[inventory]]
+
+You think about the room you just explored. You saw so many princesses. Amber must have loved those movies very much - acting like she was a princess too, even in this hellish place. 
+
+And...what if the robot bearing down on you has some connection to Amber? It was in her room, after all. Maybe it's afraid you're stealing her dolls or her princess dresses. As for how they ended up fused in this abomination...you'd really rather not dwell on that now.
+
+You get a crazy idea. You reach into your bag and pull out...
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("old dress: a Princess Isabella costume\n")>>
+	[[the old princess dress]]
+<</if>>
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("Princess Isabella doll: an old doll of a princess\n")>>
+	[[the doll]]
+<</if>>
+still going to [[fight |fight the princess]]
+
+
+:: opening [gen] {"position":"575,100","size":"100,100"}
+<<set $inventory to []>>
+[[inventory]]
+
+//Where is this place?//
+
+You know the town of Summerfall as well as you do the back of your hand. You recognize every little shop, know most townspeople by name, and remember a list of every urban legend, even ridiculous ones like the one about the missing children at the general store. 
+
+So, it's surprising and horrifying that you've stumbled upon a place that even you don't recognize during a hike in the woods.
+
+You appear to be in an abandoned laboratory. While this place might have once been pristine white, now everything is covered in stains. Vast portions of this complex are made of metal, and significant portions have rusted away. 
+
+You step over rusty metal frames and cracked tiles as you walk forward.
+
+[[try and leave]]
+[[keep heading inside]] 
+
+
+
+
+:: show the folder of achievements [room-4] {"position":"3112.5,500","size":"100,100"}
+[[inventory]]
+
+You carefully remove one of the certificates from the folder - John Fitzgerald's 1st place award during a "Midnight Music" competition.
+
+You also pull out the picture of the beaming little boy and his family.
+
+The piano inspects your offerings, making a choked noise as it looks at the photo. You suddenly realize that if this robot is connected with John Fitzgerald, it has probably been years since he last saw these people.
+
+Slowly, its eyes shift from red to green.
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with John Fitzgerald.
+
+The monster-piano still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 4, and thankfully there are no other strange entities about.
+
+<<set $room4complete to true>>
+<<set $peaceful to true>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: the copy of "Unique Insects of Summerfall" [room-3] {"position":"1550,1225","size":"100,100"}
+[[inventory]]
+
+Hesitantly, you take the copy of "Unique Insects of Summerfall" out of your bag and present it to the bug. 
+
+It grazes your hand lightly with its...hand? as it takes the book. 
+
+It tries to flip the book's pages, but its insect hands are evidently not built for turning pages, and it drops the book.
+
+You pick the book back up and begin reading to the bug.
+
+"Mayflies are aquatic insects that live for only a day. They go through the following stages in life: an egg stage, a larva stage, and finally the adult stage..."
+
+Its eyes shift from red to green and its joints creak as it listens to you read. 
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with Hannah Keats.
+
+The robot-child still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 3, and thankfully there are no other strange entities about.
+
+<<set $room3complete to true>>
+<<set $peaceful to true>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: the doll [room-2] {"position":"1225,700","size":"100,100"}
+[[inventory]]
+
+Hesitantly, you present the robot-child with the old doll.
+
+Its eyes shift from red to green and its joints creak as it holds the doll close to its chest the way a mother would hold her child. You decide to let the robot have the doll - you're way too old for them, anyways. 
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with Amber Hayes.
+
+The robot-child still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 2, and thankfully there are no other strange entities about.
+
+<<set $room2complete to true>>
+<<set $peaceful to true>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+
+:: the old princess dress [room-2] {"position":"1475,675","size":"100,100"}
+[[inventory]]
+
+Hesitantly, you present the robot-child with the old princess dress.
+
+Its eyes shift from red to green and its joints creak as it tries to put the dress on - despite having a metallic dress, it evidently has a special connection to this dress. You help unzip the back of the dress and carefully help it step into the gown.
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with Amber Hayes.
+
+The robot-child still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 2, and thankfully there are no other strange entities about.
+
+<<set $room2complete to true>>
+<<set $peaceful to true>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: the sketchbook [room-3] {"position":"1925,1250","size":"100,100"}
+[[inventory]]
+
+Hesitantly, you hand the bug one of the sketchbooks.
+
+It grazes your hand lightly with its...hand? as it takes the book. 
+
+It tries to flip the book's pages, and it seems rather intrigued by Hannah's drawings. Unfortunately, the book is a little too heavy for the bug, and it comes crashing down in a heap of paper.
+
+You pick the book back up and show the bug the images of insects and butterflies Hannah drew.
+
+Its eyes shift from red to green and its joints creak as it looks at the drawings, as if feeling a kindred spirit with the insects on the page.
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with Hannah Keats.
+
+The bug still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 3, and thankfully there are no other strange entities about.
+
+<<set $room3complete to true>>
+<<set $peaceful to true>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room4complete is false>>
+	[[explore room 4]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: there's got to be a better way [room-1] {"position":"700,550","size":"100,100"}
+[[inventory]]
+
+You think about the room you just explored. You saw so many coloring books and toy cars. Ray must have loved those things very much. 
+
+And...what if the robot bearing down on you has some connection to Ray? It was in his room, after all. Maybe it's afraid you're stealing his precious toy cars. As for how they ended up fused in this abomination...you'd really rather not dwell on that now.
+
+You get a crazy idea. You reach into your bag and pull out...
+
+<<if $inventory.includes("coloring book: filled with Ray Johnson's favorite car-themed cartoon\n")>>
+	[[a coloring book]]		
+<</if>>
+<<if $inventory.includes("record of Ray's toy cars: cars of all shapes and sizes. Ray evidently loved toy cars\n")>>
+	[[a toy car]]
+<</if>>
+
+still going to [[fight]]
+
+
+:: try and leave [gen] {"position":"900,0","size":"100,100"}
+[[inventory]]
+
+With a deafening screech, a pile of metal lands right behind you, just barely missing hitting you and definitely blocking your escape.
+
+The metal pile looks very heavy, too. It seems the only way out is to explore further and see if there is another exit elsewhere.
+
+[[keep heading inside]] 
+
+
+
+:: try playing the keyboard in the closet [room-4] {"position":"2987.5,500","size":"100,100"}
+[[inventory]]
+
+This is not the moment to make your grand return to the world of music. It's cramped, smelly, and you're being stared down by a monster piano. 
+
+Regardless, you've made this choice. There's no backing out.
+
+You take a bow to an imaginary audience as you start playing.
+
+You start out hesitantly - it has been a while since you last touched a musical instrument, after all. But soon, you find your footing, and are playing a lovely contemporary piece.
+
+The other piano watches in awe. It's completely stopped just to listen to you play - even if you have no idea what you're playing. But music has always been a subjective form of art, has it not?
+
+As you finish your great improvisation, its eyes shift from red to green and its joints creak as it listens to you play. 
+
+You feel very uneasy realizing your intuition was correct. Somehow, this robot is connected with John Fitzgerald.
+
+The monster-piano still seems in pain, but you can tell it is no longer hostile.
+
+You inspect the rest of Room 4, and thankfully there are no other strange entities about.
+
+<<set $room4complete to true>>
+<<set $peaceful to true>>
+
+<<if $room1complete is false>>
+	[[explore room 1]] 
+<</if>>
+<<if $room2complete is false>>
+	[[explore room 2]] 
+<</if>>
+<<if $room3complete is false>>
+	[[explore room 3]] 
+<</if>>
+<<if $room1complete is true and $room2complete is true and $room3complete is true
+and $room4complete is true>>
+[[who did this?]]
+<</if>>
+
+
+:: turn and confront ??? [room-1] {"position":"400,225","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true and $room2complete is true and $room3complete is true>>
+Is it a sad thing you are no longer terrified of the metal monsters? In a way, you almost expect them. What terrifies you is the nagging suspicion in the back of your head...
+<<else>>
+WHAT IS THAT THING?!?
+<</if>>
+
+It is a hideous mix of vehicle and robot, with a twisted face and empty red eyes. Instead of normal arms and legs - it has wheels, like some kind of evil car. You don't remember it entering the room - meaning //it was here the whole time//. It probably watched you rummage through Ray's belongings, too.
+
+As it shambles towards you on its rusted legs, it wails in pain. Its screams make you wish you didn't have ears.
+
+Despite the fact that the...thing...looks hideous, you can't help but feel sorry for it. 
+
+[[fight]]
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("record of Ray's toy cars: cars of all shapes and sizes. Ray evidently loved toy cars\n") or $inventory.includes("coloring book: filled with Ray Johnson's favorite car-themed cartoon\n")>>
+	[[there's got to be a better way]]
+<</if>>
+
+
+:: turn and confront ???? [room-2] {"position":"1075,225","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true and $room3complete is true and $room4complete is true>>
+Is it a sad thing you are no longer terrified of the metal monsters? In a way, you almost expect them. What terrifies you is the nagging suspicion in the back of your head...
+<<else>>
+WHAT IS THAT THING?!?
+<</if>>
+
+It appears to be a blond princess wearing a pink dress - and then everything looks //wrong//. Its face is twisted and its eyes are empty and glowing red. You don't remember it entering the room - meaning //it was here the whole time//. It probably watched you rummage through Amber's belongings, too.
+
+It approaches you like a princess entering a royal ball - all while wailing what sounds like "Mom!" again and again.
+Despite the fact that the...thing...looks hideous, you can't help but feel sorry for it. 
+
+[[fight |fight the princess]]
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("old dress: a Princess Isabella costume\n") or $inventory.includes("Princess Isabella doll: an old doll of a princess\n")>>
+	[[there's got to be a better way |negotiate with the princess]]
+<</if>>
+
+
+:: turn and confront ????? [room-3] {"position":"1550,850","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true and $room2complete is true and $room4complete is true>>
+Is it a sad thing you are no longer terrified of the metal monsters? In a way, you almost expect them. What terrifies you is the nagging suspicion in the back of your head...
+<<else>>
+WHAT IS THAT THING IN THE CORNER!?!!!
+<</if>>
+
+
+It hovers in the air, buzzing in a low drone that sends a shiver down your spine. It has a human child's face - but the body and wings of a six-legged insect. Its metal wings flap back and forth. Clink clank. Clink clank. Clink clank. 
+
+You don't remember it entering the room - meaning //it was here the whole time//. It probably watched you rummage through Hannah's belongings, too.
+
+As it flies towards you, it wails in pain. Its screams make you wish you didn't have ears.
+
+Clink clank. Clink clank. Clink clank.
+
+Despite the fact that the...thing...looks hideous, you can't help but feel sorry for it. 
+
+[[fight |fight with the bug]]
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("Unique Insects of Summerfall: a guide to the unique insect life of Summerfall\n") or $inventory.includes("insect sketchbook\n")>>
+	[[there's got to be a better way |negotiate with the bug]]
+<</if>>
+
+
+:: turn and confront the thing [room-4] {"position":"2925,250","size":"100,100"}
+[[inventory]]
+
+<<if $room1complete is true and $room2complete is true and $room3complete is true>>
+Is it a sad thing you are no longer terrified of the metal monsters? In a way, you almost expect them. What terrifies you is the nagging suspicion in the back of your head...
+<<else>>
+WHAT IS THAT THING?!?
+<</if>>
+
+it appears to be a grand piano with red eyes - at least that's what you think it is. It's so large, you can't help but wonder if that's all, and if there isn't another hidden part ready to come after you think everything has settled.
+
+You don't remember it entering the room - meaning //it was here the whole time//. It probably watched you rummage through John's belongings, too.
+
+It shambles towards you clumsily, scraping the floor with a hideous screech.
+
+Despite the fact that the...thing...looks hideous, you can't help but feel sorry for it. 
+
+[[fight |fight with the piano]]
+
+<<if $inventory and Array.isArray($inventory) and $inventory.includes("record of electric keyboard: a cherished possession\n") or $inventory.includes("folder of achievements\n")>>
+	[[there's got to be a better way |negotiate with the piano]]
+<</if>>
+
+
+:: turn and confront the true monster [denoument] {"position":"1250,1775","size":"100,100"}
+[[inventory]]
+
+The old man faces you head on. You were expecting a decrepit old man, maybe some scars or other disfigurements, but this man looks surprisingly well put together for someone of his age.
+
+Without a doubt, It's Alistair Lilly. You see the label on his lab coat. Besides, who else would be in this complex at this time?
+
+"I expected that //someone// would find this place, so I made sure to block off the exits when I noticed an //intruder//." He says in a smooth voice.
+
+"You'll never make it out alive." He continues, as he slowly approaches you. 
+
+"You're Alistair Lilly!" You yell, as you slowly back away. "You're a murderer! You're a monster!"
+
+He simply laughs. "Monster? You call me the monster? I was the one who gave these children life!"
+
+"You killed them!"
+
+You're not sure how you'd explain this to the police, but this man needs to face justice. He has gone unpunished for far too long.
+
+[[bring Alistair Lilly to justice]]
+   
+
+
+
+
+:: who did this? [denoument] {"position":"1250,1525","size":"100,100"}
+[[inventory]]
+
+Initially, you were terrified of this place. But now, having explored all four rooms, you feel nothing but disgust at the person who robbed these children of their lives, their hopes, and their dreams and made countless others terrified of disappearing into the void.
+
+You want nothing more than to ensure these children receive some justice. 
+
+Is it too late? It doesn't matter. These children deserve better than to be forgotten forever. 
+
+But first, you should confirm you have the right guy. You feel confident you know who the culprit is, who performed these atrocities. The person whose name appeared in those notebooks time and time again...
+
+Make sure you get that name right.
+
+<<set $name to "">>
+Who was responsible?: <<textbox "$name" "Lilly" "It's Alistair Lilly.">>
+
+
+
+:: StoryStylesheet [stylesheet]
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+.pt-mono-regular 
+{
+  font-family: "PT Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html 
+{
+	font: 100% 'PT Mono', serif;
+}
+
+.confrontation a
+{
+  color: red;
+}
+
+.intro
+{
+  font-size: 2rem;
+}
